@@ -1,15 +1,15 @@
-import { Github, StarIcon, Zap } from "lucide-react";
+import { GitBranchIcon, StarIcon, Zap } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 
 export default function HeroSection() {
   return (
     <section className="w-full py-20 md:py-32 lg:py-40 bg-grid-small-white/[0.2] relative flex items-center justify-center">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-background mask-[radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="container px-4 md:px-6 text-center">
         <div className="space-y-4">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
+            <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-500 to-teal-400">
               去你的996
             </span>
             <br />
@@ -33,7 +33,7 @@ export default function HeroSection() {
                 rel="noopener noreferrer"
                 className="gap-2"
               >
-                <Github className="h-4 w-4" /> View on GitHub
+                <GitBranchIcon className="h-4 w-4" /> View on GitHub
               </a>
             </Button>
             <Button size="lg" variant="secondary" asChild>
